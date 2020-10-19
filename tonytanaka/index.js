@@ -17,4 +17,5 @@ console.log(cleanSy[y]);
 r = Math.floor(Math.random() * 255);
 g = Math.floor(Math.random() * 255);
 b = Math.floor(Math.random() * 255);
-console.log(`rgb (${r},${g}, ${b})`);
+a = Math.floor(Math.random() * 100);
+console.log(`rgb (${r},${g}, ${b}, ${a})`);
