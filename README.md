@@ -11,7 +11,8 @@ let chrs = 'ABCDEFGH';
 
 2)
 
-let sy = '%&    § !* @= '
+let sy = `'%&    § !* @= '`
+
 
 🚀  Write program to picking one not empty random character from sy.
 
