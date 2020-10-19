@@ -14,7 +14,7 @@ let cleanSy = sy.trim();
 console.log(cleanSy);
 let countSy = cleanSy.length;
 console.log(countSy);
-let y = Math.floor(Math.random() * countSy) + 1;
+let y = Math.floor(Math.random() * countSy);
 console.log(cleanSy[y]);
 
 //exercise 3
