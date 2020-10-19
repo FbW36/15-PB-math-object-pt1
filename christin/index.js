@@ -12,9 +12,11 @@ console.log("pickrandom:", pickNum);
 
 let sy = "%& § !* @= ";
 sy = sy.split(" ");
-sy = sy.toString();
+sy = sy.join("");
 
-let pickNum2 = sy.charAt(Math.random() * 8);
+let pickNum2 = sy[Math.floor(Math.random() * sy.length)];
+
+//console.log(Math.floor(Math.random() * sy.length));
 
 console.log(pickNum2);
 
@@ -26,6 +28,7 @@ let x = Math.ceil(Math.random() * 255);
 
 let y = Math.ceil(Math.random() * 255);
 let z = Math.ceil(Math.random() * 255);
+let a = Math.floor(Math.random() * 2);
 
-let backCol = `rgb(${x},${y},${z})`;
+let backCol = `rgb(${x},${y},${z},${a})`;
 console.log(backCol);
