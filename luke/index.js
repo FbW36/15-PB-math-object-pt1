@@ -4,13 +4,11 @@ let chrs = "ABCDEFGH";
 let pickRandom = Math.floor(Math.random() * chrs.length);
 console.log(chrs[pickRandom]);
 
-let sy = "%& § !* @= ";
-
 // Write program to picking one not empty random character from sy.
-let space = / /gi;
-let alteration = sy.replace(space, "");
-let pickRandom2 = Math.floor(Math.random() * sy.length);
-console.log(sy[pickRandom2]);
+let sy = "%& § !* @= ";
+let alteration = sy.replace(/ /g, "");
+let pickRandom2 = alteration[Math.floor(Math.random() * alteration.length)];
+console.log(pickRandom2);
 
 // Write program to generates Random rgba background color.
 let r = Math.ceil(Math.random() * 255);
