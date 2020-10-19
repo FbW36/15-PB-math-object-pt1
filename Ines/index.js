@@ -4,8 +4,10 @@ let chrs = "ABCDEFGH";
 console.log("1 ==>", chrs.charAt(Math.random() * 8));
 
 //2
-let sy = "%&    § !* @= ";
-console.log("2 ==>", sy.charAt(Math.random() * 14));
+let sy = '%& § !\* @=  s';
+let syNoSpaces = sy.replace(/ /g, "");
+console.log(syNoSpaces);
+console.log("2 ==>", syNoSpaces.charAt(Math.random() * 8));
 
 //3
 function randomNumber() {
